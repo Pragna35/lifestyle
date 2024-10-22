@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerSection{
+  /* border: solid; */
+  width: 100%;
+  height: 8%;
+  /* padding: 2%; */
+  background-color: rgb(86, 90, 78);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1;
+}
+.center ul li{
+  color: white;
+  list-style: none;
+  display: inline-flex;
+  margin: 0px 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style:italic ;
+}
+.center{
+  flex:3;
+}
+.center ul{
+  margin: 0;
+  padding: 0;
+}
+.left{
+  flex:2;
+  /* border:solid; */
+  font-style: italic;
+  margin-left: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+ 
+.search{
+  flex: 2;
+  /* border:solid; */
+}
+.search input{
+  padding: 4px;
+width: 85%;
+border-radius: 8px;
+}
+.right{
+  flex:2;
+  /* border:solid; */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+padding: 0px 10px;
+font-size: 1.2rem;
+font-weight: 600;
+font-style:italic ;
+}
+.menuBtn{
+  display: none;
+  font-size: 1.4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.banner-imgs{
+    width:100%;
+}
+.bannerDiv{
+  margin-top:4%;
+}
+
+.headings{
+  color:white;
+  text-align:center;
+  font-style:italic ;
+  margin:1.6% 1.2%;
+  padding:10px;
+  background-Color: rgb(86, 90, 78);
+}
+.menBanner img,.womenBanner img,.footer img,.kidsBanner img, .beautyBanner img{
+  width: 100%;
+  margin: 8px auto;
+  border-radius: 20px;
+}
+
+#kids,#beauty{
+  margin-top: 2%;
+}
+.mensCollection,.womensCollection , .kidsCollection {
+  display: flex;
+justify-content: space-around;
+margin: 3% 0%;
+
+}
+.mensCollection img,.womensCollection img, .kidsCollection img{
+  width: 18%;
+  border-radius: 10px;
+  box-shadow:  0px 0px 5px 3px rgb(161, 162, 160);
+}
+.footer{
+  margin: 10px 0px;
+}
+
+@media screen and (min-width:768px ) and (max-width: 992px) {
+  .center ul li,.search ,.right .signin ,.right .cart{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+ .right .menuBtn{
+    display: block;
+    /* margin-left: 50%; */
+
   }
+  .headerSection{
+  height: 6%;
+  }
+  .bannerDiv{
+    margin-top:7%;
+  }
+  .left .title h2{
+    font-size: 2rem;
+  } 
+ 
+}
+
+@media screen and (min-width:390px ) and (max-width: 767px){
+  .center ul li,.search ,.right .signin ,.right .cart{
+    display: none;
+  }
+
+  .right .menuBtn{
+    display: block;
+    /* margin-left: 50%; */
+
+  }
+  .headerSection{
+    height: 7%;
+    }
+    .bannerDiv{
+      margin-top:12%;
+    }
+    .left .title h2{
+      font-size: 1.8rem;
+    } 
+    .headings{
+      margin:0% .3%;
+      padding:4px;
+      font-size: 1.2rem;
+    }
+    
+    .menBanner img,.womenBanner img,.footer img,.kidsBanner img, .beautyBanner img{
+      border-radius: 10px;
+      margin: 4px auto;
+    }
+    .mensCollection ,.womensCollection , .kidsCollection {
+
+      margin: 2% 0%;
+    }
+
+    .mensCollection img,.womensCollection img, .kidsCollection img{
+      width: 17%;
+      border-radius: 8px;
+      box-shadow:  0px 0px 5px 2px rgb(161, 162, 160);
+    }
+
+}
+
+@media screen  and (max-width: 389px){
+  .center ul li,.search ,.right .signin ,.right .cart{
+    display: none;
+  }
+
+  .right .menuBtn{
+    display: block;
+    /* margin-left: 50%; */
+
+  }
+  .headerSection{
+    height: 6%;
+    }
+    .bannerDiv{
+      margin-top:12%;
+    }
+    .left .title h2{
+      font-size: 1.4rem;
+    } 
+    .menuBtn{
+      font-size: 1rem;
+    }
+    .headings{
+      margin:0% .3%;
+      padding:4px;
+      font-size: 1.2rem;
+    }
+    
+    .menBanner img,.womenBanner img,.footer img,.kidsBanner img, .beautyBanner img{
+      border-radius: 10px;
+      margin: 4px auto;
+    }
+    .mensCollection ,.womensCollection , .kidsCollection {
+
+      margin: 2% 0%;
+    }
+
+    .mensCollection img,.womensCollection img, .kidsCollection img{
+      width: 17%;
+      border-radius: 4px;
+      box-shadow:  0px 0px 5px 2px rgb(161, 162, 160);
+    }
+
 }
