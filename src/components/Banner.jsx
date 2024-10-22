@@ -9,7 +9,6 @@ const Banner = () => {
      <img className='banner-imgs' src="/assets/banners/banner.webp" alt="banner" />
       </Carousel.Item>
       <Carousel.Item interval={500}>
-
       <img className='banner-imgs'  src="/assets/banners/banner1.jpg" alt="banner" />
       </Carousel.Item>
       <Carousel.Item>
