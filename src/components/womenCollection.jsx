@@ -2,14 +2,7 @@
 
 const WomensCollection = (props) => {
 
-    const womensHeading = {
-        color:"white",
-    textAlign:"center",
-    margin:"1.5% 1.2%",
-    padding:"10px",
-    backgroundColor: "rgb(86, 90, 78)",
-    
-    }
+
 
    // console.log(props,"women")
     const  {title,image1,image2,image3,image4,image5} = props.womensFashion;
